@@ -1,0 +1,92 @@
+{
+  "widgets": [
+    {
+      "height": 6,
+      "width": 12,
+      "y": 0,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "metrics": [
+          [
+            "AWS/EC2",
+            "CPUUtilization"
+          ]
+        ],
+        "region": "ap-south-1",
+        "title": "Server-new-CPUUtilization"
+      }
+    },
+    {
+      "height": 6,
+      "width": 12,
+      "y": 0,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "metrics": [
+          [
+            "CWAgent",
+            "mem_used_percent"
+          ]
+        ],
+        "region": "ap-south-1",
+        "title": "Server-new-mem"
+      }
+    },
+    {
+      "height": 7,
+      "width": 12,
+      "y": 71,
+      "x": 0,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "title": "Server-new-ROOT",
+        "metrics": [
+          [
+            "CWAgent",
+            "disk_used_percent",
+            "path",
+            "/",
+            "device",
+            "nvme0n1p1",
+            "fstype",
+            "xfs"
+          ]
+        ],
+        "region": "ap-south-1"
+      }
+    },
+    {
+      "height": 7,
+      "width": 12,
+      "y": 71,
+      "x": 12,
+      "type": "metric",
+      "properties": {
+        "view": "timeSeries",
+        "stacked": false,
+        "title": "Server-new-EBS",
+        "metrics": [
+          [
+            "CWAgent",
+            "disk_used_percent",
+            "path",
+            "/mnt/ebs1",
+            "device",
+            "nvme1n1p1",
+            "fstype",
+            "ext4"
+          ]
+        ],
+        "region": "ap-south-1"
+      }
+    }
+  ]
+}
